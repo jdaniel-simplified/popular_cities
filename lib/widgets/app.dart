@@ -3,20 +3,20 @@
 /// @About:     
 // @File:       app.dart 
 // @Date:       09-28-20
-// @Version:    popular_citiies 1.0
+// @Version:    popular_cities 1.0
 // @Developer:  José Daniel Quijano (jose.quijano55@gmail.com)
 //
 ///
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:popular_citiies/blocs/omboarding_bloc/omboarding_bloc.dart';
-import 'package:popular_citiies/blocs/home_page_bloc/home_page_bloc.dart';
-import 'package:popular_citiies/blocs/preferences_bloc/preferences_bloc.dart';
-import 'package:popular_citiies/repositories/preferences_repository.dart';
-import 'package:popular_citiies/widgets/utils/colors.dart';
-import 'package:popular_citiies/widgets/utils/navigation.dart';
-import 'package:popular_citiies/widgets/views/home_page.dart';
-import 'package:popular_citiies/widgets/views/omboarding_page.dart';
+import 'package:popular_cities/blocs/omboarding_bloc/omboarding_bloc.dart';
+import 'package:popular_cities/blocs/home_page_bloc/home_page_bloc.dart';
+import 'package:popular_cities/blocs/preferences_bloc/preferences_bloc.dart';
+import 'package:popular_cities/repositories/preferences_repository.dart';
+import 'package:popular_cities/widgets/utils/colors.dart';
+import 'package:popular_cities/widgets/utils/navigation.dart';
+import 'package:popular_cities/widgets/views/home_page.dart';
+import 'package:popular_cities/widgets/views/omboarding_page.dart';
 
 class App extends StatelessWidget
 {

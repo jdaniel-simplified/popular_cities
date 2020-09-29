@@ -10,9 +10,9 @@
 
 import 'dart:convert';
 
-import 'package:popular_citiies/models/cities_model.dart';
-import 'package:popular_citiies/models/preferences_model.dart';
-import 'package:popular_citiies/models/user_model.dart';
+import 'package:popular_cities/models/cities_model.dart';
+import 'package:popular_cities/models/preferences_model.dart';
+import 'package:popular_cities/models/user_model.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 abstract class Preferences
 {

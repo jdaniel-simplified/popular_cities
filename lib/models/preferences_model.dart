@@ -3,7 +3,7 @@
 /// @About:     User preferences class model
 // @File:       preferences_model.dart
 // @Date:       09-28-20
-// @Version:    popular_citiies 1.0
+// @Version:    popular_cities 1.0
 // @Developer:  José Daniel Quijano (jose.quijano55@gmail.com)
 //
 ///

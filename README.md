@@ -1,4 +1,4 @@
-# popular_citiies
+# popular_cities
 
 A new Flutter application.
 

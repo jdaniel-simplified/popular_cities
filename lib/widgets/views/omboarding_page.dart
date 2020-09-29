@@ -11,10 +11,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:introduction_screen/introduction_screen.dart';
-import 'package:popular_citiies/blocs/omboarding_bloc/omboarding_bloc.dart';
-import 'package:popular_citiies/widgets/utils/colors.dart';
-import 'package:popular_citiies/widgets/utils/screen_helper.dart';
-import 'package:popular_citiies/widgets/views/home_page.dart';
+import 'package:popular_cities/blocs/omboarding_bloc/omboarding_bloc.dart';
+import 'package:popular_cities/widgets/utils/colors.dart';
+import 'package:popular_cities/widgets/utils/screen_helper.dart';
+import 'package:popular_cities/widgets/views/home_page.dart';
 
 
 
@@ -50,7 +50,7 @@ class OmboardingPage extends StatelessWidget {
             ),
             footer: Align(
               alignment: Alignment.bottomCenter,
-              child: Text('Bienvendos a Zuapp una experiencia innovadora en servicio a domicilio.', style: TextStyle(fontSize: screen.setHeight(3.6), color: Colors.white), textAlign: TextAlign.center)
+              child: Text('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a facilisis est. Aenean consequat vehicula auctor. Nullam quis semper urna, non tempor eros.', style: TextStyle(fontSize: screen.setHeight(3.6), color: AppColors.secondary), textAlign: TextAlign.center)
             ),
           ),
           PageViewModel(
@@ -73,7 +73,7 @@ class OmboardingPage extends StatelessWidget {
             ),
             footer: Align(
               alignment: Alignment.bottomCenter,
-              child: Text('Selecciona tu producto, paga con efectivo o tarjeta de crédito, síguelo y disfrútalo.', style: TextStyle(fontSize: screen.setHeight(3.6), color: Colors.white), textAlign: TextAlign.center)
+              child: Text('Sed lobortis dui ut metus efficitur, id vestibulum justo mollis. Morbi consectetur magna sit amet sollicitudin convallis. Quisque cursus suscipit augue at fringilla. Duis vulputate auctor gravida.', style: TextStyle(fontSize: screen.setHeight(3.6), color: AppColors.secondary), textAlign: TextAlign.center)
             ),
           ),
           PageViewModel(
@@ -96,14 +96,14 @@ class OmboardingPage extends StatelessWidget {
             ),
             footer: Align(
               alignment: Alignment.bottomCenter,
-              child: Text('Toda una variedad de productos y servicios disponibles. Disfrútalos!', style: TextStyle(fontSize: screen.setHeight(3.6), color: Colors.white), textAlign: TextAlign.center)
+              child: Text('Morbi hendrerit, ex eget vulputate pharetra, purus urna mollis leo, quis lobortis turpis erat id nisl. Aliquam imperdiet pulvinar lacus et malesuada.', style: TextStyle(fontSize: screen.setHeight(3.6), color: AppColors.secondary), textAlign: TextAlign.center)
             ),
           ),
         ];
 
         return IntroductionScreen(
           pages: listPagesViewModel,
-          globalBackgroundColor: AppColors.primary,
+          globalBackgroundColor: Colors.white,
           next: Material(
             color: AppColors.primary.withOpacity(0.8),
             borderRadius: BorderRadius.circular(screen.setHeight(1.6)),
@@ -115,7 +115,7 @@ class OmboardingPage extends StatelessWidget {
             ),
           ),
           dotsDecorator: DotsDecorator(
-            activeColor: Colors.white,
+            activeColor: AppColors.primary,
           ),
           done: Material(
             color: AppColors.primary.withOpacity(0.8),

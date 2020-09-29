@@ -3,7 +3,7 @@
 /// @About:     
 // @File:       cities_model.dart 
 // @Date:       09-28-20
-// @Version:    popular_citiies 1.0
+// @Version:    popular_cities 1.0
 // @Developer:  José Daniel Quijano (jose.quijano55@gmail.com)
 //
 ///
@@ -13,7 +13,7 @@ class City
 {
   final String id;
   final String name;
-  final List<String> pictures;
+  final List<dynamic> pictures;
   final String desc;
   final int likes;
 
@@ -24,7 +24,7 @@ class City
    name = json['name'],
    pictures = json['pictures'],
    desc = json['desc'],
-   likes = json['likes'];
+   likes = int.parse(json['likes'].toString());
 
   Map<String, dynamic> toJson() =>
   {

@@ -12,8 +12,8 @@ import 'package:flutter/material.dart';
 
 class AppColors
 {
-  static Color primary = Color(0xFFfa4515);
-  static Color secondary = Color(0xFFffc0ef);
+  static Color primary = Color(0xFF1874fc);
+  static Color secondary = Color(0xFF24b7fc);
   static Color facebookButton = Color(0xFF007AFF);
   static Color inputBackground = Color(0xFF8E8E93);
   static Color buttonBackground1 = Color(0xFFD1D1D6);

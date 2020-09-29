@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "638151395676",
+    "firebase_url": "https://popular-cities.firebaseio.com",
+    "project_id": "popular-cities",
+    "storage_bucket": "popular-cities.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:638151395676:android:e9be9109f831be370fd999",
+        "android_client_info": {
+          "package_name": "com.jquijano.popular_cities"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "638151395676-00v102u61ruiagvgkagc14hhji9m2661.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jquijano.popular_cities",
+            "certificate_hash": "8bfd4b2a60905fab056e4dc6bca09109c0aba818"
+          }
+        },
+        {
+          "client_id": "638151395676-88q1750opp89jme6kmbahm5krpcl5ju3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtTOZ-iW_O-a7ZLRBc83uaGEoSTqn5clw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "638151395676-88q1750opp89jme6kmbahm5krpcl5ju3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
