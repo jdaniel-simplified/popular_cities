@@ -6,8 +6,11 @@ abstract class HomePageEvent extends Equatable {
 
 class DoGetHomePageState extends HomePageEvent
 {
+  final bool desc;
+
+  DoGetHomePageState(this.desc);
   @override
   // TODO: implement props
-  List<Object> get props => throw UnimplementedError();
+  List<Object> get props => [desc];
 
 }

@@ -20,11 +20,11 @@ class GettingHomePageState extends HomePageState
 class GateHomePageState extends HomePageState
 {
   final List<City> cities;
-
-  GateHomePageState(this.cities);
+  final bool desc;
+  GateHomePageState(this.cities, this.desc);
   @override
   // TODO: implement props
-  List<Object> get props => [cities];
+  List<Object> get props => [cities, desc];
 
 }
 

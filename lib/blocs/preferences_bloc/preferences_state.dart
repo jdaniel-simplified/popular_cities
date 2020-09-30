@@ -18,12 +18,11 @@ class PreferencesNotLoaded extends PreferencesState
 
 class PreferencesLoaded extends PreferencesState 
 {
-  final bool islogin;
+
   final bool first;
-  final User user;
-  PreferencesLoaded(this.islogin, this.first, this.user);
+  PreferencesLoaded(this.first);
   
   @override
   // TODO: implement props
-  List<Object> get props => [islogin, first, user];
+  List<Object> get props => [first];
 }

@@ -111,24 +111,6 @@ class PreferencesImpl extends Preferences
   }
 
   @override
-  Future<bool> hasInternet() async
-  {
-    bool state = true;
-    SharedPreferences prefs = await SharedPreferences.getInstance();
-      //await prefs.setString('user', null);
-     state = await prefs.getBool('internet');
-     return state;
-  }
-
-  @override
-  saveConnextionStatus(bool state) async
-  {
-    SharedPreferences prefs = await SharedPreferences.getInstance();
-
-    prefs.setBool('internet', state);
-  }
-
-  @override
   Future<List<City>> getFavorites() async
   {
     List<City> fvs = [];

@@ -12,10 +12,11 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:popular_cities/blocs/omboarding_bloc/omboarding_bloc.dart';
 import 'package:popular_cities/blocs/home_page_bloc/home_page_bloc.dart';
 import 'package:popular_cities/blocs/preferences_bloc/preferences_bloc.dart';
+import 'package:popular_cities/blocs/cities_bloc/cities_bloc.dart';
 import 'package:popular_cities/repositories/preferences_repository.dart';
 import 'package:popular_cities/widgets/utils/colors.dart';
 import 'package:popular_cities/widgets/utils/navigation.dart';
-import 'package:popular_cities/widgets/views/home_page.dart';
+import 'package:popular_cities/widgets/views/home.dart';
 import 'package:popular_cities/widgets/views/omboarding_page.dart';
 
 class App extends StatelessWidget
@@ -47,19 +48,9 @@ class App extends StatelessWidget
             BlocProvider<HomePageBloc>(
               create: (context) => HomePageBloc(),
             ),
-            /*BlocProvider<LoginBloc>(
-              create: (context) => LoginBloc(),
+            BlocProvider<CitiesBloc>(
+              create: (context) => CitiesBloc(),
             ),
-            BlocProvider<RegisterBloc>(
-              create: (context) => RegisterBloc(),
-            ),
-            BlocProvider<FavoritesBloc>(
-              create: (context) => FavoritesBloc(),
-            ),
-            BlocProvider<ProfileBloc>(
-              create: (context) => ProfileBloc(),
-            ),*/
-
           ],
           child: BlocBuilder<PreferencesBloc, PreferencesState>(
               builder: (bContext, bState)
@@ -73,16 +64,15 @@ class App extends StatelessWidget
                     home = OmboardingPage();
                   }
                   else {
-                    home = HomePage();
+                    home = Home();
                   }
                 }
                 return MaterialApp(
-                  title: 'Champagne Power',
+                  title: 'Popular Cities',
                   debugShowCheckedModeBanner: false,
                   themeMode: ThemeMode.light,
                   theme: ThemeData(
                     primaryColor: AppColors.primary,
-                    fontFamily: 'Avenir',
                   ),
                   home: home,
                   navigatorObservers: <NavigatorObserver>[

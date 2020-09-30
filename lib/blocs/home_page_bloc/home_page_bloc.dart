@@ -23,9 +23,9 @@ class HomePageBloc extends Bloc<HomePageEvent, HomePageState> {
       {
         List<City> cities;
 
-        cities = await CitiesRepository().getCities();
+        cities = await CitiesRepository().getCities(event.desc);
 
-        yield GateHomePageState(cities);
+        yield GateHomePageState(cities, event.desc);
       }
       catch(e, st)
       {

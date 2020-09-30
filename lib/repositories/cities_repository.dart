@@ -13,12 +13,13 @@ import 'package:popular_cities/models/cities_model.dart';
 
 class CitiesRepository
 {
-  Future<List<City>> getCities() async
+  Future<List<City>> getCities(bool desc) async
   {
     List<City> cities = [];
 
     await FirebaseFirestore.instance
         .collection('cities')
+        .orderBy('likes', descending: desc)
         .get()
         .then((QuerySnapshot querySnapshot) => {
           querySnapshot.docs.forEach((doc) {
@@ -28,5 +29,15 @@ class CitiesRepository
     });
 
     return cities;
+  }
+
+  Future addLike(City c) async
+  {
+    FirebaseFirestore.instance
+        .collection('cities')
+        .doc(c.id)
+        .update({'likes': c.likes})
+        .then((value) => print('City updated'))
+        .catchError((error) => print('Failed to update city: $error'));
   }
 }

@@ -15,7 +15,7 @@ class City
   final String name;
   final List<dynamic> pictures;
   final String desc;
-  final int likes;
+  int likes;
 
   City(this.id, this.name, this.pictures, this.desc, this.likes);
 
